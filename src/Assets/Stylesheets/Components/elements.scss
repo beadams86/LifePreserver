@@ -1,3 +1,7 @@
+.button{
+    transition:all 0.3s;
+}
+
 .button.dark-bg{
     border-color:#fff;
     color:#fff;
@@ -11,4 +15,9 @@
         background-color:$primary-dark;
         border-color:transparent;
     }
+}
+
+.button.button-block{
+    display:block;
+    width:100%;
 }
