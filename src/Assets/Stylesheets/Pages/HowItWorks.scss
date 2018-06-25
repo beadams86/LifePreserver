@@ -1,0 +1,26 @@
+@import "../Settings/Base.scss";
+
+.step{
+    border-bottom:1px solid $light-gray;
+    display:flex;
+    padding-top:7rem;
+}
+
+.step-image{
+    text-align:center;
+
+    img{max-width:100%;margin-bottom:-7px;}
+}
+
+.step-text{
+    padding:5rem 0;
+    align-self:center;
+    h1{
+        font-weight:bold;
+    }
+
+    p{
+        font-size:1.25em;
+        color:$med-gray;
+    }
+}

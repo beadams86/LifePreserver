@@ -1,0 +1,25 @@
+.hero{
+    min-height:500px;
+    background-size:cover;
+    position:relative;
+
+    &:before{
+        content:'';
+        background:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0)100%);
+        position:absolute;
+        width:100%;
+        height:100%;
+    }
+
+    .hero-container{
+        padding:7rem 0;
+        padding-bottom:calc(7rem+5rem);
+    }
+    h1{
+        font-weight:700;
+        font-size:6rem;
+        color:#fff;
+        max-width:70%;
+        margin-bottom:3rem;
+    }
+}

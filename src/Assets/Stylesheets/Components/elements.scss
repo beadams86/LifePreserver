@@ -1,0 +1,14 @@
+.button.dark-bg{
+    border-color:#fff;
+    color:#fff;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary{
+    background:$primary;
+    border-color:transparent;
+
+    &:hover{
+        background-color:$primary-dark;
+        border-color:transparent;
+    }
+}

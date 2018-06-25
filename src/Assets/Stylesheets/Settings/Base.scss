@@ -1,11 +1,11 @@
 // colors
-
-$primary: #4277FF;
-$secondary: #b0e7ff;
-$tertiary: #BFD1CF;
-$dark-gray: #222;
-$light-gray:#eeedea;
-$med-gray:#9FA2B2;
+$primary: #FF9929;
+$primary-dark:#FF9929;
+$secondary: #2587FF;
+$tertiary: #FFDCB3;
+$dark-gray: #4C4C4C;
+$light-gray:#f3f4f8;
+$med-gray:#B8BCC2;
 
 // base.scss
 
@@ -13,94 +13,6 @@ $med-gray:#9FA2B2;
 html, body {
 	margin: 0;
   padding: 0;
-}
-
-body{overflow-x:hidden;}
-/*! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-img,
-embed,
-object,
-audio,
-video {
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-  text-align: left;
 }
 
 html {
@@ -116,36 +28,13 @@ html {
           text-size-adjust: 100%;
 }
 
-article,
-aside,
-figure,
-footer,
-header,
-hgroup,
-section {
-  display: block;
-}
-
-body,
-button,
-input,
-select,
-textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-code,
-pre {
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: auto;
-  font-family: monospace;
-}
-
 body {
   color: #4a4a4a;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  background:#fff;
+  padding-top:4.5rem;
 }
 
 a {
@@ -178,22 +67,6 @@ img {
   height: auto;
   max-width: 100%;
 }
-
-.button {
-    padding:.5rem .25rem;
-    border-bottom:3px solid $primary;
-    transition:all 0.5s;
-}
-
-.button:focus, .button.is-focused, .button:active, .button.is-active {
-	outline: none;
-  }
-  
-.button:hover, .button.is-hovered {
- 
-  padding-left:1rem;
-  }
-
   h1, h2, h3, h4, h5{
     font-family:-apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color:#111;
@@ -277,7 +150,6 @@ h4 {
   font-size: 1.125em;
   /* 1.125x body copy size = 18px */
   line-height: 1.11111111;
-  text-transform:uppercase;
   letter-spacing:-1px;
   font-weight:bold;
 }
@@ -296,3 +168,7 @@ h4 {
 .text-right{text-align:right;}
 .text-left{text-align:left;}
 .text-center{text-align:center;}
+
+.container{
+  max-width:1200px;
+}
