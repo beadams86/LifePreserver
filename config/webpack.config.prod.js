@@ -335,7 +335,8 @@ module.exports = {
   node: {
     dgram: 'empty',
     fs: 'empty',
-    net: 'empty',
+    net: 'mock',
+    dns: 'mock',
     tls: 'empty',
     child_process: 'empty',
   },

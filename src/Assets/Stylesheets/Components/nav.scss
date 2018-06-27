@@ -62,9 +62,12 @@
     top:0;
     width: 100%;
     box-sizing:border-box;
-    padding:1rem;
-    display:flex;
-    flex-direction:row;
+    padding:1rem 0;
+
+    & > .container{
+        display:flex;
+        flex-direction:row;
+    }
 
     .navbar-logo{
         max-width:240px;

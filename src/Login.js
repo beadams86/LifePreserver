@@ -21,8 +21,6 @@ render() {
                       className="form-item"
                       placeholder="Username"
                       hintText="Enter your Username"
-                      floatingLabelText="Username"
-                      onChange = {(event,newValue) => this.setState({username:newValue})}
                       />
                   <br/>
 
@@ -31,11 +29,9 @@ render() {
                     placeholder="Password"
                     type="password"
                     hintText="Enter your Password"
-                    floatingLabelText="Password"
-                    onChange = {(event,newValue) => this.setState({password:newValue})}
                     />
                   <br/>
-                <button className="button button-primary button-block" value="Login" primary={true} type="button" onClick={(event) => this.handleClick(event)}>Login</button>
+                <button className="button button-primary button-block" value="Login" type="button">Login</button>
                 </div>
               </div>
 
