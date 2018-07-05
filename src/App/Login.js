@@ -2,9 +2,11 @@ import React from 'react';
 
 import base from './Base';
 import AppNav from '../Components/AppNav';
-import LPLogo from '../Assets/Images/LP-Logo.svg';
+
+import LoginSplash from '../Assets/Images/Login/Splash.png';
 
 import '../Assets/Stylesheets/style.scss';
+import '../Assets/Stylesheets/Pages/Login.scss';
 
 class Login extends React.Component{
     constructor(props){
@@ -41,11 +43,12 @@ class Login extends React.Component{
         return(
             <div>
                 <AppNav />
-                <div className="container">
-                    <div className="row">
-                        <div className="six columns offset-by-three">
-                            <form>
-                            <h1 className="text-center"><img src={LPLogo} alt="Life Preserver Logo" /></h1>
+                <div className="row">
+                    <div className="seven columns split-content">
+                    <div className="container">
+                        <h1>Login</h1>
+                        <p>Let the journey begin!</p>
+                        <form>
                             <label htmlFor="exampleInputEmail1">Email Address</label>
                             <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="textbox" id="exampleInputEmail1" placeholder="Enter Email" />
                             <small id="emailHelp" className="small gray">We'll never share your information</small>
@@ -58,6 +61,8 @@ class Login extends React.Component{
                             </form>
                         </div>
                     </div>
+
+                    <div className="five columns split-splash"  style={{ backgroundImage: `url(${LoginSplash})` }} > </div>
                 </div>
 
             </div>
