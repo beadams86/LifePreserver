@@ -4,7 +4,8 @@ import { Route } from "react-router-dom";
 
 import Home from "./Home";
 import HowItWorks from "./HowItWorks";
-import Login from "./Login";
+import Login from "./App/Login";
+import LPApp from "./App/index";
 
 class App extends Component {
   render() {
@@ -12,7 +13,8 @@ class App extends Component {
       <div className="App">
         <Route exact path="/" component={Home} />
         <Route path="/HowItWorks" component={HowItWorks} />
-        <Route path="/Login" component={Login} />
+        <Route path="/App/Login" component={Login} />
+        <Route path="/App/index" component={LPApp} />
       </div>
     );
   }

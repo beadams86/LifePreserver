@@ -1,0 +1,15 @@
+.progress-bar{
+    border-radius:50px;
+    border:1px solid $light-gray;
+    height:3rem;
+    position:relative;
+
+    .progress-bar__fill{
+        background:$primary;
+        border-radius:50px;
+        padding:1rem;
+        position:absolute;
+        left:0;
+        height:1rem;
+    }
+}

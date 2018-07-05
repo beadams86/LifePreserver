@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import LoginSplash from './Assets/Images/Login/Splash.png';
 import './Assets/Stylesheets/Pages/Login.scss';
 import AppNav from './Components/AppNav';
@@ -31,7 +33,7 @@ render() {
                     hintText="Enter your Password"
                     />
                   <br/>
-                <button className="button button-primary button-block" value="Login" type="button">Login</button>
+                <Link to="/App/index" className="button button-primary button-block">Login</Link>
                 </div>
               </div>
 

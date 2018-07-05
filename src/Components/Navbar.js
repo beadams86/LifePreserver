@@ -11,8 +11,7 @@ class Navbar extends Component {
           <ul className="navbar-links">
               <li><Link to="/HowItWorks">How it works</Link></li>
               <li><Link to="/Resources">Resources</Link></li>
-              <li><a href="/Login" className="navbar-link__button navbar-link__button--secondary">Login</a></li>
-              <li><a href="/Signup" className="navbar-link__button navbar-link__button--primary">Sign Up</a></li>
+              <li><a href="/App/Login" className="navbar-link__button navbar-link__button--secondary">Login</a></li>
           </ul>
         </div>
       </nav>
